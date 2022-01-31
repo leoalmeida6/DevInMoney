@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/application/Design.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/application/Main.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/application/MenuInterno.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/contas/Agencia.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/contas/Conta.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/contas/ContaCorrente.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/contas/ContaInvestimento.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/contas/ContaPoupanca.java" charset="ISO-8859-1" />
+  </component>
+</project>
