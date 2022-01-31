@@ -207,7 +207,7 @@ public class Conta {
 	}
 
 	// Menu Primeira Operação
-	public void menuPrimeiraOperacao() {
+	public void menuPrimeiraOperacao(List<Conta> contasCadastradas) {
 		Scanner tecladoMenu2 = new Scanner(System.in);
 
 		int opcao2 = 0;
@@ -231,12 +231,12 @@ public class Conta {
 				int opcaoInterna = tecladoMenu2.nextInt();
 
 				if (opcaoInterna == 1) {
-					menuPrimeiraOperacao();
+					menuPrimeiraOperacao(contasCadastradas);
 				}
 			} else if (opcao2 == 2) {
 				System.out.println("\nVoltar ao Menu Principal. Você será redirecionado em intantes...");
 				ContaCorrente menuCorrente = new ContaCorrente();
-				menuCorrente.menuInterno();
+				menuCorrente.menuInterno(contasCadastradas);
 
 			} else if (opcao2 == 3) {
 

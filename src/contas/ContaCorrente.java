@@ -27,7 +27,7 @@ public class ContaCorrente extends Conta {
 	}
 
 	// Métodos
-	public void metChequeEspecial() {
+	public void metChequeEspecial(List<Conta> contasCadastradas) {
 		Scanner tecladoCheque = new Scanner(System.in);
 
 		if (this.getSaldo() == 0) {
@@ -51,7 +51,7 @@ public class ContaCorrente extends Conta {
 				setSaldo(this.chequeEspecial);
 				System.out.println("Saldo: " + getSaldo());
 
-				menuInterno();
+				menuInterno(contasCadastradas);
 
 			} else {
 				System.out.println("Sessão finalizada.");
@@ -111,7 +111,7 @@ public class ContaCorrente extends Conta {
 			} else if (opcao1 == 5) {
 				this.metTransfrencia(0);
 			} else if (opcao1 == 6) {
-				this.metChequeEspecial();
+				this.metChequeEspecial(contasCadastradas);
 			} else if (opcao1 == 7) {
 				this.metAlteraCadastro();
 			} else if (opcao1 == 8) {

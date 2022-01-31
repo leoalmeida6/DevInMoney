@@ -69,9 +69,9 @@ public class Main {
 					System.out.print("Opção: ");
 					int primeiraOperacao = teclado.nextInt();
 
-					contaCorrente.menuPrimeiraOperacao();
+					contaCorrente.menuPrimeiraOperacao(contasCadastradas);
 
-					contaCorrente.menuInterno();
+					contaCorrente.menuInterno(contasCadastradas);
 
 				} else if (tipoConta == 2) {
 					ContaPoupanca contaPoupanca = new ContaPoupanca();
@@ -91,9 +91,9 @@ public class Main {
 					System.out.print("Opção: ");
 					int primeiraOperacao = teclado.nextInt();
 
-					contaPoupanca.menuPrimeiraOperacao();
+					contaPoupanca.menuPrimeiraOperacao(contasCadastradas);
 
-					contaPoupanca.menuInterno();
+					contaPoupanca.menuInterno(contasCadastradas);
 
 				} else if (tipoConta == 3) {
 					ContaInvestimento contaInvestimento = new ContaInvestimento();
@@ -108,7 +108,7 @@ public class Main {
 
 					contasCadastradas.add(contaInvestimento);
 
-					contaInvestimento.menuInterno();
+					contaInvestimento.menuInterno(contasCadastradas);
 
 				} else if (escolha1 == 2) {
 					System.out.println("Opção Invalida. Você não tem conta neste banco. Como quer entrar em uma? ");

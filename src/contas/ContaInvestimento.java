@@ -1,5 +1,6 @@
 package contas;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class ContaInvestimento extends Conta {
@@ -129,7 +130,7 @@ public class ContaInvestimento extends Conta {
 	}
 	
 	// Menu Principal
-	public void menuInterno() {
+	public void menuInterno(List<Conta> contasCadastradas) {
 
 		while (true) {
 			Scanner tecladoMenu3 = new Scanner(System.in);
@@ -156,7 +157,7 @@ public class ContaInvestimento extends Conta {
 			} else if (opcao1 == 4) {
 				this.metAlteraCadastro();
 			} else if (opcao1 == 5) {
-				this.metRelatorio();
+				this.metRelatorio(contasCadastradas);
 			} else {
 			System.out.println("Sessão finalizada.");
 				return;
